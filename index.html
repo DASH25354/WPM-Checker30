@@ -127,16 +127,12 @@
 
 <!-- テキスト -->
 <div id="text">
-【24】Students, next week you will interview professionals. Today I speak about Mehrabian’s rule. This rule is about feelings and attitude. It says three parts work together: words (about 7%), voice (about 38%), and body language (about 55%). When words and feelings do not match, people trust voice and body more than words. So, your tone and your body are very important. This rule is a guide, not a perfect law for every talk, but it can help you make a strong interview. 
-Use this idea in your interview. Your words should be simple and clear. Your voice should be warm and calm. Your body should show respect. Sit up straight. Smile. Look at their eyes sometimes. Nod to show “I understand.” Do not cross your arms. Keep your hands relaxed. These small actions can spark trust.
-Listen with care. Use short phrases: “I see,” “Thank you,” “That’s interesting.” Repeat key ideas to check: “So, you started this job in 2019, right?” Ask open questions and let the other person speak. 
-In the end, say, “Thank you for your time. I learned a lot.” Remember: words matter, but voice and body often guide feelings. Let your words be simple, your tone kind, and your body language positive.
-</div>
+【25】A strong typhoon hit Cebu and other parts of the central Philippines. Many towns were under water. At least 85 people died, and hundreds of thousands left their homes. In Cebu, at least 49 people died. Seventy-five people are missing, and 17 are hurt. People stayed on rooftops to be safe. Cars and big boxes moved quickly in the streets with the flood. The death number may go up. A military helicopter crashed on Mindanao island, south of Cebu. Six crew members died. The typhoon brought heavy rain and strong wind. Power was out in many places. Roads were blocked, and help was slow in some areas. People need clean water, food, and dry clothes. Many families need a safe place to sleep. Workers and volunteers are trying to give help and fix roads. It will take time to repair homes and schools. Many people are sad and afraid, but they hope for support.</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="24.mp3" type="audio/mpeg">
+    <source src="25.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -149,11 +145,11 @@ In the end, say, “Thank you for your time. I learned a lot.” Remember: words
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Mehrabian’s rule says body language is 100% of communication, so words do not matter.
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> A strong typhoon hit Cebu; many died or fled, and rescue work is ongoing.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Mehrabian’s rule says that when words and feelings do not match, people trust voice and body more than words.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> The rule is a perfect law for every talk and always gives the same result. </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> In interviews, simple words, a warm voice, and respectful body language can spark trust and help make a strong interview. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Cebu had a small storm, and people quickly returned home.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> The typhoon caused floods, deaths, missing people, and damage in central Philippines. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> A helicopter crash was the only event in Cebu. </span>
 </div>
 
 <div id="result"></div>
@@ -173,8 +169,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: b, d
-  const correctAnswers = ["b", "d"];
+  // 正解選択肢: a, c
+  const correctAnswers = ["a", "c"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -199,6 +195,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
